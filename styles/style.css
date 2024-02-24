@@ -9,11 +9,13 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center; /* убрано дублирование */
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -50,11 +52,6 @@ ol {
 }
 
 /* дописанные данные */
-
-.page {
-  display: flex;
-  align-items: center;
-}
 
 .content {
   display: flex;
@@ -243,7 +240,7 @@ ol {
 .content__list {
   position: relative;
   width: 399px;
-  height: 298px;
+  height: 297px;
   overflow: auto;
   scrollbar-width: none;
 }
@@ -251,7 +248,7 @@ ol {
 /* ТЕМПЛЕЙТЫ */
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -288,7 +285,8 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 100%;
+  width: 200px;
+  height: 103px;
 }
 
 .content__video-card-title {
@@ -313,6 +311,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 200px;
-  height: 101px;
+  width: 195px;
+  height: 103px;
+  object-position: center;
+  object-fit: cover;
 }
